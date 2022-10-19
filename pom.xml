@@ -52,10 +52,12 @@
 						<name>springcloud/demo-config-server</name>
 						<publish>true</publish>
 					</image>
-					<publishRegistry>
-						<username>${env.DOCKER_HUB_USERNAME}</username>
-						<password>${env.DOCKER_HUB_PASSWORD}</password>
-					</publishRegistry>
+					<docker>
+						<publishRegistry>
+							<username>${env.DOCKER_HUB_USERNAME}</username>
+							<password>${env.DOCKER_HUB_PASSWORD}</password>
+						</publishRegistry>
+					</docker>
 				</configuration>
 			</plugin>
 		</plugins>
